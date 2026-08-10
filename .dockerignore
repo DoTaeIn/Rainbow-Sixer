@@ -1,0 +1,8 @@
+.git
+.node-runtime
+node_modules
+dist
+dist-discord
+.env
+.env.*
+maps
