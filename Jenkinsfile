@@ -8,7 +8,8 @@ def runCmd(cmd) {
   }
 }
 
-def NODE_VERSION = 'v22.11.0'
+// Vite 7은 Node 22.12 이상(또는 20.19 이상)을 요구한다.
+def NODE_VERSION = 'v22.12.0'
 
 pipeline {
   agent any
