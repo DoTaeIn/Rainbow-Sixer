@@ -7,13 +7,23 @@
 import { createServer } from 'node:http';
 import { attach } from './room.js';
 import { serveStatic } from './static.js';
+import { loadEnv } from './env.js';
+
+loadEnv();
 
 const PORT = process.env.PORT || 3001;
-const CLIENT_ID = process.env.DISCORD_CLIENT_ID;
+const CLIENT_ID = process.env.DISCORD_CLIENT_ID || process.env.DISCORD_APP_ID;
 const CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET;
 
-if (!CLIENT_ID || !CLIENT_SECRET) {
-  console.error('DISCORD_CLIENT_ID / DISCORD_CLIENT_SECRET 환경변수가 필요합니다.');
+if (!CLIENT_ID) {
+  console.error('DISCORD_APP_ID (= application id) 가 필요합니다. .env 를 확인하세요.');
+  process.exit(1);
+}
+if (!CLIENT_SECRET) {
+  console.error(
+    'DISCORD_CLIENT_SECRET 이 필요합니다.\n' +
+    '  개발자 포털 > 내 앱 > OAuth2 > Client Secret 에서 발급합니다.\n' +
+    '  (Public Key 는 인터랙션 서명 검증용이라 여기서는 쓰지 않습니다.)');
   process.exit(1);
 }
 

@@ -17,4 +17,4 @@ public/ops/
 dist-discord/
 .env
 .env.*
-!.env.*.example
+!.env.example

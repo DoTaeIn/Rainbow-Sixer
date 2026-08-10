@@ -2,6 +2,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sixer</title>
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="icon" href="/logo.png" sizes="512x512">
+<link rel="apple-touch-icon" href="/logo.png">
+<meta name="theme-color" content="#1e293b">
 <style>
   :root {
     --bg: #0b1120; --panel: #1e293b; --line: #334155;
@@ -20,7 +24,9 @@
   /* ── 공통: 헤더 ─────────────────────────── */
   header { flex: none; display: flex; align-items: center; gap: 14px; padding: 10px 16px;
            background: var(--panel); border-bottom: 1px solid var(--line); }
-  #logo { font-weight: 800; font-size: 17px; letter-spacing: -.02em; color: var(--accent); }
+  #logo { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 17px;
+          letter-spacing: -.02em; color: var(--accent); }
+  #logo img { width: 24px; height: 24px; }
   #codeval { padding: 5px 11px; border: 1px solid var(--line); border-radius: 4px;
              background: #0f172a; color: inherit; font: 700 13px/1 ui-monospace, monospace;
              letter-spacing: .14em; cursor: pointer; }
@@ -38,6 +44,7 @@
   html[data-host="discord"] #join { display: none; }
   #join { flex: 1; display: grid; place-items: center; padding: 20px; }
   #join form { width: 100%; max-width: 300px; display: flex; flex-direction: column; }
+  #joinLogo { width: 72px; height: 72px; align-self: center; margin-bottom: 14px; }
   #join h2 { margin-bottom: 6px; }
   #join label { font-size: 11px; color: var(--dim); margin: 12px 0 5px; }
   #join input { padding: 11px 12px; border: 1px solid var(--line); border-radius: 6px;
@@ -179,13 +186,14 @@
 
 <header>
   <button id="leave" hidden>← 나가기</button>
-  <span id="logo">SIXER</span>
+  <span id="logo"><img src="/logo.svg" alt="" width="24" height="24">SIXER</span>
   <button id="codeval" hidden title="클릭하면 초대 링크가 복사됩니다"></button>
   <span id="status"></span>
 </header>
 
 <div id="join">
   <form id="joinForm">
+    <img id="joinLogo" src="/logo.svg" alt="Sixer" width="72" height="72">
     <h2>방 입장</h2>
     <label for="joinNick">닉네임</label>
     <input id="joinNick" maxlength="16" placeholder="닉네임" autocomplete="off">

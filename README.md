@@ -48,12 +48,21 @@ PORT=8080 node server/index.js
 
 1. [디스코드 개발자 포털](https://discord.com/developers/applications)에서 앱 생성 → **Activities 활성화**
 2. **URL Mappings**: `PREFIX` `/` → `TARGET` 배포 도메인 (프로토콜 제외)
-3. `.env.discord.example` 을 `.env.discord` 로 복사하고 `VITE_DISCORD_CLIENT_ID` 채우기
+3. `.env.example` 을 `.env` 로 복사하고 값 채우기
+
+```
+DISCORD_APP_ID=...          # General Information > Application ID (공개값)
+DISCORD_CLIENT_SECRET=...   # OAuth2 > Client Secret (서버 전용)
+```
 
 ```bash
 npm run build:discord
-DISCORD_CLIENT_ID=... DISCORD_CLIENT_SECRET=... npm run start:discord
+npm run start:discord       # .env 를 자동으로 읽습니다
 ```
+
+`DISCORD_APP_ID` 는 액티비티 창을 띄우는 데 필요해서 클라이언트 번들에 들어갑니다(공개값).
+`DISCORD_CLIENT_SECRET` 은 `/api/token` 에서만 씁니다. **Public Key 는 인터랙션(웹훅) 서명
+검증용이라 Activity 에는 쓰지 않습니다.**
 
 `client_secret` 은 서버(`/api/token`)에서만 씁니다. 브라우저로 내려가지 않습니다.
 
