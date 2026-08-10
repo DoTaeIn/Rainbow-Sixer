@@ -1,0 +1,162 @@
+{
+ "bank": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "border": [
+  "1F",
+  "2F",
+  "R"
+ ],
+ "calypso-casino": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "chalet": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "close-quarter": [
+  "1F",
+  "2F"
+ ],
+ "clubhouse": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "coastline": [
+  "1F",
+  "2F",
+  "R"
+ ],
+ "consulate": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "emerald-plains": [
+  "1F",
+  "2F",
+  "R"
+ ],
+ "favela": [
+  "B",
+  "1F",
+  "2F",
+  "3F",
+  "R"
+ ],
+ "fortress": [
+  "1F",
+  "2F",
+  "R"
+ ],
+ "hereford-base": [
+  "B",
+  "1F",
+  "2F",
+  "3F",
+  "R"
+ ],
+ "house": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "kafe-dostoyevsky": [
+  "1F",
+  "2F",
+  "3F",
+  "R"
+ ],
+ "kanal": [
+  "B",
+  "1F",
+  "2F",
+  "3F",
+  "R"
+ ],
+ "lair": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "nighthaven-labs": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "oregon": [
+  "B",
+  "1F",
+  "2F",
+  "3F",
+  "R"
+ ],
+ "outback": [
+  "1F",
+  "2F",
+  "R"
+ ],
+ "presidential-plane": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "skyscraper": [
+  "1F",
+  "2F",
+  "R"
+ ],
+ "stadium-alpha": [
+  "B",
+  "1F",
+  "2F",
+  "3F",
+  "R"
+ ],
+ "stadium-bravo": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "theme-park": [
+  "1F",
+  "2F",
+  "R"
+ ],
+ "tower": [
+  "B",
+  "1F",
+  "2F",
+  "R"
+ ],
+ "villa": [
+  "B",
+  "1F",
+  "2F",
+  "3F",
+  "R"
+ ],
+ "yacht": [
+  "B",
+  "1F",
+  "2F",
+  "3F",
+  "R"
+ ]
+}

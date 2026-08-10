@@ -1,0 +1,20 @@
+node_modules/
+dist/
+./claude
+
+# 유비소프트 공식 블루프린트 원본 zip (91MB). 저장소에 넣지 않는다.
+#   python tools/maps.py sync   로 언제든 다시 받는다.
+# 여기서 구운 public/maps/*.webp 는 빌드 입력이라 커밋한다.
+maps/*.zip
+
+# r6operators 패키지에서 굽는 아이콘. 빌드가 알아서 만든다.
+public/ops/
+
+*.log
+.DS_Store
+
+# 디스코드 Activity 빌드 결과물과 자격증명
+dist-discord/
+.env
+.env.*
+!.env.*.example

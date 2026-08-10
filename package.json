@@ -1,0 +1,27 @@
+{
+  "name": "sixer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node tools/ops.js && vite",
+    "dev:discord": "node tools/ops.js && vite --mode discord",
+    "build": "node tools/ops.js && vite build",
+    "build:discord": "node tools/ops.js && vite build --mode discord",
+    "start": "node server/index.js",
+    "start:discord": "node server/discord.js",
+    "maps": "python tools/maps.py build",
+    "ops": "node tools/ops.js",
+    "check": "node server/check.js"
+  },
+  "devDependencies": {
+    "r6operators": "^2.12.0",
+    "vite": "^7.1.5"
+  },
+  "dependencies": {
+    "@discord/embedded-app-sdk": "^2.5.0",
+    "ws": "^8.21.3"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}

@@ -1,0 +1,32 @@
+{
+ "_": "zip 안 블루프린트의 나열 순서 = 층. 공식 zip 이 맵마다 순서가 달라서 규칙이 아니라 데이터로 둔다. 새 맵 추가 후 화면 보고 틀리면 여기만 고치면 됨.",
+
+ "bank": ["1F", "2F", "B", "R"],
+ "border": ["1F", "2F", "R"],
+ "chalet": ["B", "1F", "2F", "R"],
+ "close-quarter": ["1F", "2F"],
+ "clubhouse": ["B", "1F", "2F", "R"],
+ "coastline": ["1F", "2F", "R"],
+ "consulate": ["B", "1F", "2F", "R"],
+ "emerald-plains": ["1F", "2F", "R"],
+ "favela": ["B", "1F", "2F", "3F", "R"],
+ "fortress": ["1F", "2F", "R"],
+ "house": ["B", "1F", "2F", "R"],
+ "kanal": ["B", "1F", "2F", "3F", "R"],
+ "lair": ["B", "1F", "2F", "R"],
+ "nighthaven-labs": ["B", "1F", "2F", "R"],
+ "oregon": ["B", "1F", "2F", "3F", "R"],
+ "outback": ["1F", "2F", "R"],
+ "skyscraper": ["1F", "2F", "R"],
+ "theme-park": ["1F", "2F", "R"],
+ "tower": ["B", "1F", "2F", "R"],
+ "villa": ["B", "1F", "2F", "3F", "R"],
+ "yacht": ["B", "1F", "2F", "3F", "R"],
+
+ "__확인필요": "아래는 화면에서 층 구분이 애매해 기본값으로 둔 맵들. 앱에서 보고 고칠 것.",
+ "hereford-base": ["B", "1F", "2F", "3F", "R"],
+ "kafe-dostoyevsky": ["1F", "2F", "3F", "R"],
+ "presidential-plane": ["B", "1F", "2F", "R"],
+ "stadium-alpha": ["B", "1F", "2F", "3F", "R"],
+ "stadium-bravo": ["1F", "2F", "B", "R"]
+}
