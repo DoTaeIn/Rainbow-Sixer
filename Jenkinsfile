@@ -4,7 +4,6 @@ pipeline {
   options {
     // Pipeline-as-code checkout을 명시적으로 수행한다.
     skipDefaultCheckout(true)
-    timestamps()
   }
 
   parameters {
